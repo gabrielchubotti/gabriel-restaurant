@@ -54,7 +54,85 @@
 
 .app__navbar-login div {
     /*this is to create a nice line between the last 2 elements in the menu bar*/
+    /*will need to adjust this line depending on screensize*/
     width: 1px;
     height: 30px;
     background-color: var(--color-grey);
+}
+
+.app__navbar-smallscreen {
+    display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /*vh means the entirity of the screen*/
+
+    background: var(--color-black);
+    transition: 0.5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 27;
+    color: var(--color-golden);
+    cursor: pointer;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.app__navbar-smallscreen_links {
+    list-style: none;
+
+}
+
+.app__navbar-smallscreen_links li {
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--color-golden);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+}
+
+.app__navbar-smallscreen_links li:hover {
+  color:white;
+}
+
+@media screen and (max-width: 2000px) {
+    .app__navbar-logo {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__navbar-links{
+        /*this will hide the navbar from small screens*/
+        display: none;
+    }
+
+    .app__navbar-smallscreen {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__navbar {
+        padding: 1rem;
+    }
+
+    .app__navbar-login {
+        display: none;
+    }
+
+    .app__navbar-logo {
+        width: 110px;
+    }
 }
