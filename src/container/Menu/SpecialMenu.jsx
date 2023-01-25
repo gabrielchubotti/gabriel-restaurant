@@ -1,10 +1,42 @@
 import React from 'react';
-
+import {data, images} from '../../constants'
+import { SubHeading, MemuItem } from '../../components';
 import './SpecialMenu.css';
 
 const SpecialMenu = () => (
-  <div>
-    SpecialMenu
+  <div className='app__specialMenu flex__center section__padding' id='menu'>
+    <div className='app__specialMenu-title'>
+      <SubHeading title='Menu that fits your palate' /> 
+      <h1 className='headtext__cormorant'>Today's special</h1>
+    </div>
+    <div className='app__specialMenu-menu'>
+      <div className='app__specialMenu-menu_wine flex__center'>
+        <p className='app__specialMenu-menu-heading'>Wine & Beer</p>
+        <div className='app__specialMenu-menu_items'>
+          {data.wines.map((wine, index) => (
+            <p>{wine.title}</p>
+          ))}
+        </div>
+      </div>
+
+      <div className='app__specialMenu-menu_img'>
+        <img src={images.menu} alt='menu image'/>
+      </div>
+
+      <div className='app__specialMenu-menu_cocktails flex__center'>
+        <p className='app__specialMenu-menu-heading'>Wine & Beer</p>
+        <div className='app__specialMenu-menu_items'>
+          {data.cocktails.map((cocktail, index) => (
+            <p>{cocktail.title}</p>
+          ))}
+        </div>
+      </div>
+
+    </div>
+
+    <div style={{maringtop: '15px'}}>
+          <button type='button' className='custom__button'> View More</button>
+      </div> 
   </div>
 );
 
