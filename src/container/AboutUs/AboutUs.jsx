@@ -9,13 +9,23 @@ const AboutUs = () => (
     </div>
     <div className='app__aboutus-content flex__center'>
       <div className='app__aboutus-content_about'>
-        <h1 className='headtext_cormorant'>
-          About Us
-        </h1>
+        <h1 className='headtext__cormorant'>About Us</h1>
         <img src={images.spoon} alt='spoon image' className='spoon__image' />
         <p className='p__opensans'>jrnwejrnwjerw jwnr jwnerjw nejwnrjwenr jwnerjwnerjnwejrn wjernwj enr wjernwenrjwnejrnwjernnw ejr nwjenrjwnerj nwejrnrjwenrjwnejr nwj rnwej rnwje nd</p>
         <button type='button' className='custom__button'>Know More</button>
       </div>
+
+      <div className='app__aboutus-content_knife flex__center'>
+        <img src={images.knife} alt='knife image'/>
+      </div>
+        <div className='app__aboutus-content_history'>
+          <h1 className='headtext__cormorant'>About Us</h1>
+          <img src={images.spoon} alt='spoon image' className='spoon__image' />
+          <p className='p__opensans'>jrnwejrnwjerw jwnr jwnerjw nejwnrjwenr jwnerjwnerjnwejrn wjernwj enr wjernwenrjwnejrnwjernnw ejr nwjenrjwnerj nwejrnrjwenrjwnejr nwj rnwej rnwje nd</p>
+          <button type='button' className='custom__button'>Know More</button>
+        </div>
+
+
     </div>
   </div>
 );
