@@ -1,10 +1,22 @@
 import React from 'react';
-
+import {images} from '../../constants'
 import './AboutUs.css';
 
 const AboutUs = () => (
-  <div>
-    AboutUs
+  <div className='app__aboutus app__bg flex__center section__padding' id='about'>
+    <div className='app__aboutus-overlay flex__center'>
+      <img src={images.G} alt = 'G letter' />
+    </div>
+    <div className='app__aboutus-content flex__center'>
+      <div className='app__aboutus-content_about'>
+        <h1 className='headtext_cormorant'>
+          About Us
+        </h1>
+        <img src={images.spoon} alt='spoon image' className='spoon__image' />
+        <p className='p__opensans'>jrnwejrnwjerw jwnr jwnerjw nejwnrjwenr jwnerjwnerjnwejrn wjernwj enr wjernwenrjwnejrnwjernnw ejr nwjenrjwnerj nwejrnrjwenrjwnejr nwj rnwej rnwje nd</p>
+        <button type='button' className='custom__button'>Know More</button>
+      </div>
+    </div>
   </div>
 );
 
