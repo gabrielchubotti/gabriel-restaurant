@@ -14,7 +14,7 @@ const Chef = () => (
       <h1 className="headtext__cormorant"> What We Believe In!</h1>
 
       <div className='app__chef__content'>
-        <div className='app__chef-content_qupte'> 
+        <div className='.app__chef-content_quote'> 
           <img src={images.quote} alt='quote' />
           <p className='p__opensans'> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet v Lorem ipsum dolor sit amet</p>
         </div>
@@ -23,7 +23,7 @@ const Chef = () => (
        
        <div className='app__chef-sign'> 
         <p>Kevin Luo</p>
-        <p className='p__opensasn'>Chef & Founder</p>
+        <p className='p__opensans'>Chef & Founder</p>
         <img src={images.sign} alt="sign"/>
     </div>
   </div>
