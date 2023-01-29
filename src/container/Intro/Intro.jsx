@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs'
+import { BsFillPlayFill, BsPause, BsPauseFill } from 'react-icons/bs'
 import { meal } from '../../constants'
  
 import './Intro.css';
@@ -33,7 +33,9 @@ const Intro = () => {
         className='app__video-overlay_circle flex__center'
         onClick={handleVideo}
         >
-
+          {playVideo ? (
+            <BsPauseFill color ='#fff' fontSize={30}/>
+          ) : <BsFillPlayFill color ='#fff' fontSize={30}/>}
         </div>
      </div> 
     </div>
