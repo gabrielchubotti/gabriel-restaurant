@@ -38,7 +38,7 @@
     scrollbar-width: none;
 }
 
-app.app__gallery-images_container::-webkit-scrollbar {
+.app__gallery-images_container::-webkit-scrollbar {
     display: none;
 }
 
@@ -68,4 +68,32 @@ app.app__gallery-images_container::-webkit-scrollbar {
 
 .app__gallery-images_card img:hover {
     opacity: 0.35;
+}
+
+.app__gallery-images_card img:hover .gallery__image-icon {
+
+    opacity: 1;
+}
+
+.app__gallery-images_arrows {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 5%;
+}
+
+.gallery__arrow-icon {
+    color: var(--color-golden);
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: var(--color-black);
+    border-radius: 5px;
+}
+
+
+.gallery__arrow-icon:hover {
+    color: white;
 }

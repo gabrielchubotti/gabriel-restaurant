@@ -7,7 +7,7 @@ import './Gallery.css';
 const galleryImages = [images.gallery01, images.gallery02, images.gallery03, images.gallery04]
 
 const Gallery = () => {
-
+  {/* look into useRef react*/}
   const scrollRef = React.useRef(null);
 
   const scroll = (direction) => {
@@ -19,7 +19,6 @@ const Gallery = () => {
       current.scrollLeft += 300;
     }
   }
-  
 
   return (
     <div className='app__gallery flex__center' id='gallery'>
@@ -39,7 +38,7 @@ const Gallery = () => {
             </div>
           ))}
         </div>
-        <div className='app__gallery-images_arrow'>
+        <div className='app__gallery-images_arrows'>
           <BsArrowLeftShort className='gallery__arrow-icon' onClick={()=> scroll('left')}/>
           <BsArrowRightShort className='gallery__arrow-icon' onClick={()=> scroll('right')}/>
 
