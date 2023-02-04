@@ -12,8 +12,8 @@ const Header = () => (
       <div className='app__wrapper_info'>
         <SubHeading  title=''/>
         <h1 className='app__header-h1'>They Key to Fine Dining</h1>
-        <p className='p__opensans' style={{ margin: '2rem 0'}}>ferfejr jrfnjernfr erjnejrnfe enrjfenjrf erjnfjernf erjnfejrfn ejrnfenjrf ejrnfejnrf jernfjerfn jrnfjern </p>
-        <button type='button' className='custom__button'>Explore Button</button>
+        <p className='p__opensans' style={{ margin: '2rem 0', padding: '0 0 2rem 0'}}>GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan GoVegan </p>
+        <button type='button' className='custom__button'>GoVegan</button>
       </div>
 
       <div className='app__wrapper_img'>
